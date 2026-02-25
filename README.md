@@ -42,16 +42,26 @@ It provides crop recommendations, soil guidance, weather-based alerts, fertilize
 AGRI-ASSIST/
 │
 ├── src/
+
 │ ├── app/ # Pages and layouts
-│ ├── components/ # UI components
-│ ├── ai/ # AI workflows
-│ ├── hooks/ # Custom hooks
-│ ├── lib/ # Utility files
+
+│ ├── components/ # Reusable UI components
+
+│ ├── ai/ # AI workflows (crop, soil, disease, weather
+)
+│ ├── hooks/ # Custom React hooks
+
+│ ├── lib/ # Utility and helper functions
 │
-├── public/ # Static assets
-├── docs/ # Documentation
-├── package.json
-└── README.md
+├── public/ # Static assets (icons, images)
+
+├── docs/ # Project documentation
+
+├── package.json # Dependencies and scripts
+
+├── next.config.ts # Next.js configuration
+
+└── README.md # Project documentation
 
 
 ---
