@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 🌱 Backgrounds */
+    --background: 48 55% 96%;
+    --foreground: 140 20% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 20% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 20% 12%;
+
+    /* 🌿 Primary (Green) */
+    --primary: 142 55% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* 🌾 Secondary */
+    --secondary: 48 35% 92%;
+    --secondary-foreground: 140 20% 15%;
+
+    /* 🍃 Muted */
+    --muted: 48 25% 92%;
+    --muted-foreground: 140 10% 40%;
+
+    /* 🌻 Accent (Amber / Orange) */
+    --accent: 32 85% 58%;
+    --accent-foreground: 20 20% 15%;
+
+    /* ❌ Destructive */
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* 🧩 Borders & Inputs */
+    --border: 48 25% 85%;
+    --input: 48 25% 88%;
+    --ring: 142 55% 45%;
+
+    /* 📐 Radius */
+    --radius: 0.75rem;
+
+    /* 📊 Charts */
+    --chart-1: 142 55% 45%;
+    --chart-2: 32 85% 58%;
+    --chart-3: 200 70% 45%;
+    --chart-4: 10 75% 55%;
+    --chart-5: 260 60% 60%;
+
+    /* 📂 Sidebar */
+    --sidebar-background: 48 55% 94%;
+    --sidebar-foreground: 140 20% 15%;
+    --sidebar-primary: 142 55% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 48 35% 90%;
+    --sidebar-accent-foreground: 140 20% 15%;
+    --sidebar-border: 48 25% 82%;
+    --sidebar-ring: 142 55% 45%;
+  }
+
+  /* 🌙 Dark Mode */
+  .dark {
+    --background: 140 15% 8%;
+    --foreground: 0 0% 96%;
+
+    --card: 140 15% 12%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 140 15% 12%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 142 55% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 10% 18%;
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 140 10% 18%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 32 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 10% 22%;
+    --input: 140 10% 22%;
+    --ring: 142 55% 48%;
+
+    --chart-1: 142 55% 48%;
+    --chart-2: 32 85% 55%;
+    --chart-3: 200 70% 50%;
+    --chart-4: 10 75% 55%;
+    --chart-5: 260 60% 60%;
+
+    --sidebar-background: 140 15% 10%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 142 55% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 140 10% 18%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 140 10% 22%;
+    --sidebar-ring: 142 55% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* 🔥 Animated Orange Glow */
+@keyframes orange-glow {
+  0% {
+    opacity: 0.3;
+    transform: translateX(-40%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0.3;
+    transform: translateX(40%);
+  }
+}
+
+.animate-orange-glow {
+  animation: orange-glow 3s ease-in-out infinite;
+}
