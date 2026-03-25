@@ -1,0 +1,22 @@
+{
+  "placeholderImages": [
+    {
+      "id": "disease-1",
+      "description": "Tomato plant with early blight",
+      "imageUrl": "https://picsum.photos/seed/tomato-blight/600/400",
+      "imageHint": "diseased tomato"
+    },
+    {
+      "id": "disease-2",
+      "description": "Corn plant with rust",
+      "imageUrl": "https://picsum.photos/seed/corn-rust/600/400",
+      "imageHint": "diseased corn"
+    },
+    {
+      "id": "disease-3",
+      "description": "Healthy strawberry plant",
+      "imageUrl": "https://picsum.photos/seed/healthy-strawberry/600/400",
+      "imageHint": "healthy strawberry"
+    }
+  ]
+}
