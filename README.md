@@ -82,3 +82,4 @@ npm run dev
 Now open:
 
 http://localhost:3000
+Live project link : https://agri-assist-pied.vercel.app/
